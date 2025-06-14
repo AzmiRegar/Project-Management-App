@@ -3,10 +3,10 @@ import { NextRequest, NextResponse } from 'next/server'
 
 export async function GET(
     _: NextRequest,
-    { params }: { params: { id: string } }
+    context: { params: { id: string } }
 ) {
     try {
-        const projectId = params.id
+        const projectId = context.params.id
 
         const counts = await prisma.task.groupBy({
             by: ['status'],
