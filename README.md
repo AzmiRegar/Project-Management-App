@@ -36,7 +36,7 @@ Analytics: **Chart.js**
 
 ### 1. Clone Repository
 
-git clone https://github.com/AzmiRegar/Project-Management-App.git
+git clone [https://github.com/AzmiRegar/Project-Management-App.git](https://github.com/AzmiRegar/sp_fs_-Azmi-Regar-)
 cd project-management-app
 
 ### 2. Install Dependencies
