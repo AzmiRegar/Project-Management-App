@@ -1,12 +1,9 @@
 import { prisma } from '@/lib/prisma'
 import { NextRequest, NextResponse } from 'next/server'
 
-export async function GET(
-    _: NextRequest,
-    context: { params: { id: string } }
-) {
+export async function GET(req: NextRequest, { params }: { params: { id: string } }) {
     try {
-        const projectId = context.params.id
+        const projectId = params.id
 
         const counts = await prisma.task.groupBy({
             by: ['status'],
